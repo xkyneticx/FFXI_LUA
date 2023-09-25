@@ -1,0 +1,211 @@
+{
+    "actions" : {
+        "enabled" : false,
+        "ja" : [
+            {
+                "enabled" : false,
+                "delay" : 2
+            }],
+        "ws" : [
+            {
+                "enabled": false,
+                "delay" : 4,
+                "skillchains" : {
+                    "enabled" : false,
+                    "solo" : false,
+                    "initiate" : false,
+                    "steps" : 2
+                }
+            }],
+        "delay" : 0.1
+    },
+    "job" : [
+        {
+            "name" : "Warrior",
+            "ja" : [
+                {
+                    "name" : "Mighty Strikes",
+                    "enabled" : false,
+                    "subjob" : false
+                },{
+                    "name" : "Berserk",
+                    "enabled" : false,
+                    "subjob" : true
+                },{
+                    "name" : "Warcry",
+                    "enabled" : false,
+                    "subjob" : true
+                },{
+                    "name" : "Defender",
+                    "enabled" : false,
+                    "subjob" : true,
+                },{
+                    "name" : "Retaliation",
+                    "enabled" : false,
+                    "subjob" : false
+                },{
+                    "name" : "Brazen Rush",
+                    "enabled" : false,
+                    "subjob" : false
+                },{
+                    "name" : "Aggressor",
+                    "enabled" : false,
+                    "subjob" : true
+                },{
+                    "name" : "Provoke",
+                    "enabled" : false,
+                    "subjob" : true
+                },{
+                    "name" : "Warrior's Charge",
+                    "enabled" : false,
+                    "subjob" : false
+                },{
+                    "name" : "Tomahawk",
+                    "enabled" : false,
+                    "subjob" : false
+                },{
+                    "name" : "Blood Rage",
+                    "enabled" : false,
+                    "subjob" : false
+                },{
+                    "name" : "Restraint",
+                    "enabled" : false,
+                    "subjob" : false
+                }]
+        },
+        {
+            "name" : "Samurai",
+            "ja" : [
+                {
+                    "name" : "Meikyo Shisui",
+                    "enabled" : false,
+                    "subjob" : false
+                },{
+                    "name" : "Warding Circle",
+                    "enabled" : false,
+                    "subjob" : true
+                },{
+                    "name" : "Third Eye",
+                    "enabled" : false,
+                    "subjob" : true
+                },{
+                    "name" : "Hasso",
+                    "enabled" : false,
+                    "subjob" : true
+                },{
+                    "name" : "Meditate",
+                    "enabled" : false,
+                    "subjob" : true
+                },{
+                    "name" : "Seigan",
+                    "enabled" : false,
+                    "subjob" : true
+                },{
+                    "name" : "Sekkanoki",
+                    "enabled" : false,
+                    "subjob" : true
+                },{
+                    "name" : "Konzen-ittai",
+                    "enabled" : false,
+                    "subjob" : false
+                },{
+                    "name" : "Shikikoyo",
+                    "enabled" : false,
+                    "subjob" : false
+                },{
+                    "name" : "Blade Bash",
+                    "enabled" : false,
+                    "subjob" : false
+                },{
+                    "name" : "Sengikori",
+                    "enabled" : false,
+                    "subjob" : false
+                },{
+                    "name" : "Hamanoha",
+                    "enabled" : false,
+                    "subjob" : false
+                },{
+                    "name" : "Hagakure",
+                    "enabled" : false,
+                    "subjob" : false
+                },{
+                    "name" : "Yaegasumi",
+                    "enabled" : false,
+                    "subjob" : false
+                }]                
+            }
+    ],
+    "weaponskill" : [
+        {
+            "name" : "Shield Break",
+            "weaponType" : "Great Axe",
+            "enabled" : false,
+            "properties" : ["Impaction"]
+        },{
+            "name" : "Iron Tempest",
+            "weaponType" : "Great Axe",
+            "enabled" : false,
+            "properties" : ["Scission"]          
+        },{   
+            "name" : "Sturmwind",
+            "weaponType" : "Great Axe",
+            "enabled" : false,
+            "properties" : ["Reverberation","Scission"]            
+        },{   
+            "name" : "Armor Break",
+            "weaponType" : "Great Axe",
+            "enabled" : false,
+            "properties" : ["Impaction"]
+        },{   
+            "name" : "Keen Edge",
+            "weaponType" : "Great Axe",
+            "enabled" : false,
+            "properties" : ["Compression"]           
+        },{
+            "name" : "Weapon Break",
+            "weaponType" : "Great Axe",
+            "enabled" : false,
+            "properties" : ["Impaction"]
+        },{
+            "name" : "Raging Rush",
+            "weaponType" : "Great Axe",
+            "enabled" : false,
+            "properties" : ["Induration","Reverberation"]
+        },{
+            "name" : "Full Break",
+            "weaponType" : "Great Axe",
+            "enabled" : false,
+            "properties" : ["Distortion"]
+        },{
+            "name" : "Steel Cyclone",
+            "weaponType" : "Great Axe",
+            "enabled" : false,
+            "properties" : ["Distortion","Detonation"]
+        },{
+            "name" : "Fell Cleave",
+            "weaponType" : "Great Axe",
+            "enabled" : false,
+            "properties" : ["Impaction","Scission","Detonation"]
+        },{
+            "name" : "Upheaval",
+            "weaponType" : "Great Axe",
+            "enabled" : false,
+            "properties" : ["Fusion","Compression"]
+        },{
+            "name" : "Metatron Torment",
+            "weaponType" : "Great Axe",
+            "enabled" : false,
+            "properties" : ["Light","Fusion"]
+        },{
+            "name" : "Ukko's Fury",
+            "weaponType" : "Great Axe",
+            "enabled" : false,
+            "properties" : ["Light","Fragmentation"]
+        },{
+            "name" : "King's Justice",
+            "weaponType" : "Great Axe",
+            "enabled" : false,
+            "properties" : ["Fragmentation","Scission"]
+        }
+    ]
+}
