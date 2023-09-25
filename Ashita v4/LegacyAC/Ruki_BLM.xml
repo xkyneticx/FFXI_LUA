@@ -1,0 +1,330 @@
+<ashitacast>
+	<!-- Settings -->
+	<settings> 
+		<!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+
+	<!-- Init -->
+	<init>
+		<setvar name="Refresh" value="0" />
+		<setvar name="Melee" value="0" />
+		<setvar name="Riding" value="0" />
+		<setvar name="Helm" value="0" />
+		<setvar name="Fishing" value="0" />
+    </init>
+
+    <!-- Sets -->
+	<sets>
+		<set name="Nuke">
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Sorcerer's Petas.</head>
+			<body>Igqira weskit</body>
+			<hands>Zenith mitts</hands>
+			<legs>Errant Slops</legs>
+			<feet>Rostrum Pumps</feet>
+			<neck>Elemental Torque</neck>
+			<waist>Sorcerer's Belt</waist>
+			<ear1>Moldavite Earring</ear1>
+			<ear2>Loquac. Earring</ear2>
+			<ring1>Diamond Ring</ring1>
+			<ring2>Tamas Ring</ring2>
+			<back>Rainbow Cape</back>
+		</set>
+		<set name="Rest">
+			<main>Pluto's Staff</main>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Sorcerer's Petas.</head>
+			<body>Errant Hpl.</body>
+			<legs>Baron's Slops</legs>
+			<neck>Checkered Scarf</neck>
+			<waist>Hierarch Belt</waist>
+			<ear1>Relaxing Earring</ear1>
+		</set>
+		<set name="Idle">
+			<main>Earth Staff</main>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Sorcerer's Petas.</head>
+			<body>Igqira weskit</body>
+			<hands>Wizard's Gloves</hands>
+			<legs>Errant Slops</legs>
+			<feet>Rostrum Pumps</feet>
+			<neck>Uggalepih Pendant</neck>
+			<waist>Sorcerer's Belt</waist>
+			<ear1>Moldavite Earring</ear1>
+			<ear2>Loquac. Earring</ear2>
+			<ring1>Diamond Ring</ring1>
+			<ring2>Tamas Ring</ring2>
+			<back>Rainbow Cape</back>
+		</set>
+		<set name="IdleRefresh">
+			<main>Earth Staff</main>
+			<ammo>Phtm. Tathlum</ammo>
+			<body>Black Cloak</body>
+			<hands>Wizard's Gloves</hands>
+			<legs>Errant Slops</legs>
+			<feet>Rostrum Pumps</feet>
+			<neck>Uggalepih Pendant</neck>
+			<waist>Sorcerer's Belt</waist>
+			<ear1>Moldavite Earring</ear1>
+			<ear2>Loquac. Earring</ear2>
+			<ring1>Diamond Ring</ring1>
+			<ring2>Tamas Ring</ring2>
+			<back>Rainbow Cape</back>
+		</set>
+		<set name="Stoneskin">
+			<main>Kirin's Pole</main>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Wizard's Petasos</head>
+			<body>Errant Hpl.</body>
+			<hands>Seer's Mitts +1</hands>
+			<legs>Errant Slops</legs>
+			<feet>Rostrum Pumps</feet>
+			<neck>Enhancing Torque</neck>
+			<waist>Sorcerer's Belt</waist>
+			<ear1>Moldavite Earring</ear1>
+			<ear2>Loquac. Earring</ear2>
+			<ring1>San d'Orian Ring</ring1>
+			<ring2>Tamas Ring</ring2>
+			<back>Rainbow Cape</back>
+		</set>
+		<set name="Dark">
+			<main>Pluto's Staff</main>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Nashira Turban</head>
+			<body>Igqira Weskit</body>
+			<hands>Sorcerer's Gloves</hands>
+			<legs>Wizard's Tonban</legs>
+			<feet>Rostrum Pumps</feet>
+			<neck>Uggalepih Pendant</neck>
+			<waist>Sorcerer's Belt</waist>
+			<ear1>Moldavite Earring</ear1>
+			<ear2>Abyssal Earring</ear2>
+			<ring1>Diamond Ring</ring1>
+			<ring2>Tamas Ring</ring2>
+			<back>Rainbow Cape</back>
+		</set>
+		<set name="Enfeebling">
+			<main>Kirin's Pole</main>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Nashira Turban</head>
+			<body>Wizard's Coat</body>
+			<hands>Seer's Mitts +1</hands>
+			<legs>Errant Slops</legs>
+			<feet>Rostrum Pumps</feet>
+			<neck>Enfeebling Torque</neck>
+			<waist>Sorcerer's Belt</waist>
+			<ear1>Abyssal Earring</ear1>
+			<ear2>Loquac. Earring</ear2>
+			<ring1>Diamond Ring</ring1>
+			<ring2>Tamas Ring</ring2>
+			<back>Rainbow Cape</back>
+		</set>
+		
+		<set name="Melee">
+			<main>Gravedigger</main>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Sorcerer's Petas.</head>
+			<body>Wizard's Coat</body>
+			<hands>Wizard's Gloves</hands>
+			<legs>Errant Slops</legs>
+			<feet>Wizard's Sabots</feet>
+			<neck>Uggalepih Pendant</neck>
+			<waist>Sorcerer's Belt</waist>
+			<ear1>Abyssal Earring</ear1>
+			<ear2>Loquac. Earring</ear2>
+			<ring1>Diamond Ring</ring1>
+			<ring2>Tamas Ring</ring2>
+			<back>Rainbow Cape</back>
+		</set>
+		<set name="FastCast">
+			<feet>Rostrum Pumps</feet>
+			<ear2>Loquac. Earring</ear2>
+		</set>
+		<set name="Riding">
+			<body>Choc. Jack Coat</body>
+			<hands>Chocobo Gloves</hands>
+			<legs>Chocobo Hose</legs>
+			<feet>Chocobo Boots</feet>
+		</set>		
+		<set name="Helm">
+			<body>Field Tunica</body>
+			<hands>Worker Gloves</hands>
+			<legs>Worker Hose</legs>
+			<feet>Worker Boots</feet>
+		</set>
+		<set name="Fishing">
+			<range>Halcyon Rod</range>
+			<body>Fsh. Tunica</body>
+			<hands>Fsh. Gloves</hands>
+			<legs>Fisherman's Hose</legs>
+			<feet>Fisherman's Boots</feet>
+		</set>
+	</sets>
+	
+	<!-- Variables -->
+	<variables>
+		<var name="Melee" value="0" />
+		<var name="Refresh" value="0" />
+		<var name="Riding" value="0" />
+		<var name="Helm" value="0" />
+		<var name="Fishing" value="0" />
+	</variables>
+
+	<!-- Input Commands -->
+	<inputcommands>
+		<cmd input="/Melee">
+			<if advanced="$Melee=0">
+				<setvar name="Melee" value="1" />
+				<addtochat color="57">Melee set ENABLED!</addtochat>
+			</if>
+			<else>
+				<setvar name="Melee" value="0" />
+				<addtochat color="57">Melee set DISABLED!</addtochat>
+			</else>
+		</cmd>
+		<cmd input="/Refresh">
+			<if advanced="$Refresh=0">
+				<setvar name="Refresh" value="1" />
+				<addtochat color="57">Refresh set ENABLED!</addtochat>
+			</if>
+			<else>
+				<setvar name="Refresh" value="0" />
+				<addtochat color="57">Refresh set DISABLED!</addtochat>
+			</else>
+		</cmd>
+		<cmd input="/Riding">
+			<if advanced="$Riding=0">
+				<setvar name="Riding" value="1" />
+				<addtochat color="57">Riding set ENABLED!</addtochat>
+			</if>
+			<else>
+				<setvar name="Riding" value="0" />
+				<addtochat color="57">Riding set DISABLED!</addtochat>
+			</else>
+		</cmd>		
+		<cmd input="/Helm">
+			<if advanced="$Helm=0">
+				<setvar name="Helm" value="1" />
+				<addtochat color="57">HELM set ENABLED!</addtochat>
+			</if>
+			<else>
+				<setvar name="Helm" value="0" />
+				<addtochat color="57">HELM set DISABLED!</addtochat>
+			</else>
+		</cmd>		
+		<cmd input="/Fishing">
+			<if advanced="$Fishing=0">
+				<setvar name="Fishing" value="1" />
+				<addtochat color="57">FISHING set ENABLED!</addtochat>
+			</if>
+			<else>
+				<setvar name="Fishing" value="0" />
+				<addtochat color="57">FISHING set DISABLED!</addtochat>
+			</else>
+		</cmd>
+	</inputcommands>
+	
+	<!-- Job Abilities -->
+	<jobability>
+	</jobability>
+	
+	<!-- Idle Gear -->
+	<idlegear>
+		<if p_status="idle">
+			<if advanced="$Melee=1">
+				<equip set="Melee" />
+			</if>
+			<if advanced="$Refresh=1">
+				<equip set="IdleRefresh" />
+				<if advanced="(%p_mp>700)|(%buff_active=Refresh)|(%buff_active=Ballad)|(%buff_active=Ballad2)">
+					<equip set="Idle" />
+				</if>
+			</if>
+		</if>
+
+		<if p_status="engaged">
+			<if advanced="$Melee=1">
+				<equip set="Melee" />
+			</if>
+			<if advanced="$Refresh=1">
+				<equip set="Fodder" />
+			</if>
+		</if>
+
+   		<if p_status="resting">
+			<equip set="Rest" />
+		</if>		
+
+		<if advanced="$Riding=1">
+			<equip set="Riding" />
+		</if>		
+
+		<if advanced="$Helm=1">
+			<equip set="Helm" />
+		</if>		
+
+		<if advanced="$Fishing=1">
+			<equip set="Fishing" />
+		</if>
+	</idlegear>
+	
+	<!-- Pre-Magic -->
+	<premagic>
+		<equip set="FastCast" />
+	</premagic>
+
+	<!-- Mid-Magic -->
+	<midmagic>
+		<!-- 
+
+		-->
+		<if ad_skill="ElementalMagic">
+			<equip set="Nuke" />
+			<!-- Handle equipping staves -->	
+			<if ad_element="Thunder"><equip><main>Thunder Staff</main></equip></if>
+			<elseif ad_element="Fire"><equip><main>Fire Staff</main></equip></elseif>
+			<elseif ad_element="Water"><equip><main>Water Staff</main></equip></elseif>
+			<elseif ad_element="Ice"><equip><main>Ice Staff</main></equip></elseif>
+			<elseif ad_element="Wind"><equip><main>Wind Staff</main></equip></elseif>
+			<elseif ad_element="Earth"><equip><main>Earth Staff</main></equip></elseif>
+			<elseif ad_element="Light"><equip><main>Light Staff</main></equip></elseif>
+			<elseif ad_element="Dark"><equip><main>Pluto's Staff</main></equip></elseif>
+			<!-- Handle equipping obis -->
+			<if advanced="{(%ad_element=Thunder)&(%e_dayelement=Thunder)}|{(%ad_element=Thunder)&(%e_weatherelement=Thunder)}"><equip><waist></waist></equip></if>
+			<elseif advanced="{(%ad_element=Fire)&(%e_dayelement=Fire)}|{(%ad_element=Fire)&(%e_weatherelement=Fire)}"><equip><waist></waist></equip></elseif>
+			<elseif advanced="{(%ad_element=Water)&(%e_dayelement=Water)}|{(%ad_element=Water)&(%e_weatherelement=Water)}"><equip><waist></waist></equip></elseif>
+			<elseif advanced="{(%ad_element=Ice)&(%e_dayelement=Ice)}|{(%ad_element=Ice)&(%e_weatherelement=Ice)}"><equip><waist>Hyorin Obi</waist></equip></elseif>
+			<elseif advanced="{(%ad_element=Wind)&(%e_dayelement=Wind)}|{(%ad_element=Wind)&(%e_weatherelement=Wind)}"><equip><waist></waist></equip></elseif>
+			<elseif advanced="{(%ad_element=Earth)&(%e_dayelement=Earth)}|{(%ad_element=Earth)&(%e_weatherelement=Earth)}"><equip><waist></waist></equip></elseif>
+			<elseif advanced="{(%ad_element=Light)&(%e_dayelement=Light)}|{(%ad_element=Light)&(%e_weatherelement=Light)}"><equip><waist></waist></equip></elseif>
+			<elseif advanced="{(%ad_element=Dark)&(%e_dayelement=Dark)}|{(%ad_element=Dark)&(%e_weatherelement=Dark)}"><equip><waist></waist></equip></elseif>
+			<!-- Handle equipping Uggaliegh Pendant -->
+		</if>
+		<elseif ad_skill="HealingMagic"><equip><main>Light Staff</main></equip></elseif>
+		<elseif ad_skill="EnhancingMagic">
+			<if ad_name="Sneak"><equip><feet>Dream Boots +1</feet></equip></if>
+			<elseif ad_name="Invisible"><equip><hands>Dream Mittens +1</hands></equip></elseif>
+			<elseif ad_name="Stoneskin"><equip set="Stoneskin"/></elseif>
+		</elseif>
+		<elseif ad_skill="EnfeeblingMagic">
+			<equip set="Enfeebling" />
+			<if ad_element="Thunder"><equip><main>Thunder Staff</main></equip></if>
+			<elseif ad_element="Fire"><equip><main>Fire Staff</main></equip></elseif>
+			<elseif ad_element="Water"><equip><main>Water Staff</main></equip></elseif>
+			<elseif ad_element="Ice"><equip><main>Ice Staff</main></equip></elseif>
+			<elseif ad_element="Wind"><equip><main>Wind Staff</main></equip></elseif>
+			<elseif ad_element="Earth"><equip><main>Earth Staff</main></equip></elseif>
+			<elseif ad_element="Light"><equip><main>Light Staff</main></equip></elseif>
+			<elseif ad_element="Dark"><equip><main>Pluto's Staff</main></equip></elseif>
+		</elseif>
+		<elseif ad_skill="DarkMagic"><equip set="Dark" /></elseif>
+	</midmagic>
+
+	<!-- Weaponskill -->
+	<weaponskill>
+	</weaponskill>
+</ashitacast>

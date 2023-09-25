@@ -1,0 +1,280 @@
+<ashitacast>
+	<settings> 
+		<!-- Contains settings specific to this xml, must be set to true/false to override default -->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	
+	<!-- Init -->
+	<init>
+		<setvar name="Riding" value="0" />
+		<setvar name="Helm" value="0" />		
+		<setvar name="Warp" value="0" />		
+		<setvar name="Tav" value="0" />
+    </init>
+
+    <!-- Sets -->
+	<sets>		
+		<set name="Healing">
+			<main>Light Staff</main>
+		</set>
+		<set name="Rest">
+			<main>Pluto's Staff</main>
+			<head>Nashira Turban</head>
+			<body>Errant Hpl.</body>
+			<neck>Checkered Scarf</neck>
+			<waist>Hierarch Belt</waist>
+			<ear1>Relaxing Earring</ear1>
+		</set>
+		<set name="FastCast">
+			<ear2>Loquac. Earring</ear2>
+			<feet>Rostrum Pumps</feet>
+		</set>
+		<set name="BP-Delay">
+			<head>Smn. Horn +1</head>
+			<body>Austere Robe</body>
+			<legs>Summoner's Spats</legs>
+			<neck>Smn. Torque</neck>
+			<ring2>Evoker's Ring</ring2>
+		</set>
+		<set name="Idle">
+			<main>Earth Staff</main>
+			<ammo>Happy Egg</ammo>
+			<body>Vermillion Cloak</body>
+			<hands>Nashira Gages</hands>
+			<legs>Evk. Spats +1</legs>
+			<feet>Evk. Pigaches +1</feet>
+			<neck>Smn. Torque</neck>
+			<waist>Hierarch Belt</waist>
+			<ear1>Relaxing Earring</ear1>
+			<ear2>Loquac. Earring</ear2>
+			<ring1>Tamas Ring</ring1>
+			<ring2>Evoker's Ring</ring2>
+			<back>Summoner's Cape</back>
+		</set>
+		<set name="Enfeebling">
+			<ammo>Morion Tathlum</ammo>
+			<head>Nashira Turban</head>
+			<body>Errant Hpl.</body>
+			<hands>Seer's Mitts +1</hands>
+			<legs>Errant Slops</legs>
+			<feet>Rostrum Pumps</feet>
+			<neck>Checkered Scarf</neck>
+			<waist>Hierarch Belt</waist>
+			<ear1>Cunning Earring</ear1>
+			<ear2>Loquac. Earring</ear2>
+			<ring1>Tamas Ring</ring1>
+			<ring2>Diamond Ring</ring2>
+			<back>Summoner's Cape</back>
+		</set>
+		<set name="Stoneskin">
+			<main>Kirin's Pole</main>
+			<ammo>Morion Tathlum</ammo>
+			<head>Wizard's Petasos</head>
+			<body>Errant Hpl.</body>
+			<hands>Seer's Mitts +1</hands>
+			<legs>Errant Slops</legs>
+			<feet>Rostrum Pumps</feet>
+			<neck>Enhancing Torque</neck>
+			<waist>Sorcerer's Belt</waist>
+			<ear1>Moldavite Earring</ear1>
+			<ear2>Loquac. Earring</ear2>
+			<ring1>San d'Orian Ring</ring1>
+			<ring2>Tamas Ring</ring2>
+			<back>Fed. Army Mantle</back>
+		</set>
+		 <set name="Riding">
+			<body>Choc. Jack Coat</body>
+			<hands>Chocobo Gloves</hands>
+			<legs>Chocobo Hose</legs>
+			<feet>Chocobo Boots</feet>
+		</set>		
+		<set name="Helm">
+			<body>Field Tunica</body>
+			<hands>Worker Gloves</hands>
+			<legs>Worker Hose</legs>
+			<feet>Worker Boots</feet>
+		</set>
+		<set name="50Sync">
+			<main>Kukulcan's Staff</main>
+			<ammo>Happy Egg</ammo>
+			<head>Seer's Crown +1</head>
+			<body>Seer's Tunic +1</body>
+			<hands>Carbuncle Mitts</hands>
+			<legs>Seer's Slacks +1</legs>
+			<feet>Seer's Pumps +1</feet>
+			<neck>Justice Badge</neck>
+			<waist>Mrc.Cpt. Belt</waist>
+			<ear1>Cunning Earring</ear1>
+			<ear2>Cunning Earring</ear2>
+			<ring1>Tamas Ring</ring1>
+			<ring2>Windurstian Ring</ring2>
+			<back>Cape</back>
+		</set>
+		<set name="BP-SMN">
+			<head>Evoker's Horn</head>
+			<legs>Evk. Spats +1</legs>
+			<neck>Smn. Torque</neck>
+			<ring2>Evoker's Ring</ring2>
+		</set>
+		<set name="Lvl40">
+			<main>Kukulcan's Staff</main>
+			<ammo>Happy Egg</ammo>
+			<head>Seer's Crown +1</head>
+			<body>Seer's Tunic +1</body>
+			<hands>Carbuncle Mitts</hands>
+			<legs>Seer's Slacks +1</legs>
+			<feet>Seer's Pumps +1</feet>
+			<neck>Black Neckerchief</neck>
+			<waist>Mrc.Cpt. Belt</waist>
+			<ear1>Cunning Earring</ear1>
+			<ring1>Tamas Ring</ring1>
+			<ring2>Windurstian Ring</ring2>
+		</set>
+	</sets>
+
+	<!-- Variables -->
+	<variables>
+		<var name="Riding" value="0" />
+		<var name="Helm" value="0" />
+		<var name="Warp" value="0" />
+		<var name="Tav" value="0" />
+	</variables>
+
+	<!-- Custom Commands -->
+	<inputcommands>
+		<cmd input="/Riding">
+			<if advanced="$Riding=0">
+				<setvar name="Riding" value="1" />
+				<setvar name="Helm" value="0" />
+				<addtochat color="57">Riding set ENABLED!</addtochat>
+			</if>
+			<else>
+				<setvar name="Riding" value="0" />
+				<addtochat color="57">Riding set DISABLED!</addtochat>
+			</else>
+		</cmd>		
+		<cmd input="/Helm">
+			<if advanced="$Helm=0">
+				<setvar name="Helm" value="1" />
+				<setvar name="Riding" value="0" />
+				<addtochat color="57">HELM set ENABLED!</addtochat>
+			</if>
+			<else>
+				<setvar name="Helm" value="0" />
+				<addtochat color="57">HELM set DISABLED!</addtochat>
+			</else>
+		</cmd>		
+		<cmd input="/Warp">
+			<if advanced="$Warp=0">
+				<setvar name="Warp" value="1" />
+				<addtochat color="57">WARP set ENABLED!</addtochat>
+			</if>
+			<else>
+				<setvar name="Warp" value="0" />
+				<addtochat color="57">WARP set DISABLED!</addtochat>
+			</else>
+		</cmd>
+		<cmd input="/Tav">
+			<if advanced="$Tav=0">
+				<setvar name="Tav" value="1" />
+				<addtochat color="57">TAV Ring set ENABLED!</addtochat>
+			</if>
+			<else>
+				<setvar name="Tav" value="0" />
+				<addtochat color="57">TAV Ring set DISABLED!</addtochat>
+			</else>
+		</cmd>
+	</inputcommands>
+
+	<!-- Job Abilities -->
+	<jobability>
+		<if ad_type="bloodpactrage|bloodpactward" >
+			<equip set="BP-Delay" />
+		</if>
+	</jobability>
+
+	<!-- Idle Gear -->
+	<idlegear>
+		<if p_status="idle|engaged">
+			<equip set="Idle" />
+			<if pet_active="True">
+				<if pet_name="Carbuncle|LightSpirit"><equip><main>Light Staff</main></equip></if>
+				<if pet_name="Ifrit|FireSpirit"><equip><main>Fire Staff</main></equip></if>
+				<if pet_name="Shiva|IceSpirit"><equip><main>Ice Staff</main></equip></if>
+				<if pet_name="Garuda|AirSpirit"><equip><main>Wind Staff</main></equip></if>
+				<if pet_name="Titan|EarthSpirit"><equip><main>Earth Staff</main></equip></if>
+				<if pet_name="Ramuh|LightningSpirit"><equip><main>Thunder Staff</main></equip></if>
+				<if pet_name="Leviathan|WaterSpirit"><equip><main>Water Staff</main></equip></if>
+				<if pet_name="Diabolos|Fenrir|DarkSpirit"><equip><main>Pluto's Staff</main></equip></if>
+				<if pet_name="Carbuncle"><equip><hands>Carbuncle Mitts</hands></equip></if>
+			</if>
+			<if p_joblevel="50"><equip set="50Sync" /></if>
+		</if>
+   		<if p_status="resting">
+   			<equip set="Rest" />
+   		</if>
+
+   		<if advanced="$Riding=1">
+			<equip set="Riding" />
+		</if>		
+		<if advanced="$Helm=1">
+			<equip set="Helm" />
+		</if>			
+		<if advanced="$Warp=1">
+			<equip><main>Warp Cudgel</main></equip>
+		</if>		
+		<if advanced="$Tav=1">
+			<equip><ring1>Tavnazian Ring</ring1></equip>
+		</if>		
+		<if e_area="Windurst*|*Windurst|Heavens Tower">
+            <equip><body>Federation Aketon</body></equip>
+        </if>
+	</idlegear>
+
+	<!-- Pre-Magic -->
+	<premagic>
+		<!-- Fast Cast -->
+		<equip set="FastCast" />
+		<if ad_skill="Summoning">
+			<equip><feet>Evoker's Boots</feet></equip>
+		</if>
+	</premagic>
+
+	<!-- Mid-Magic -->
+	<midmagic>
+		<!-- -->
+		<if ad_skill="EnhancingMagic">
+			<if ad_name="Sneak"><equip><feet>Dream Boots +1</feet></equip></if>
+			<elseif ad_name="Invisible"><equip><hands>Dream Mittens +1</hands></equip></elseif>
+			<elseif ad_name="Stoneskin"><equip set="Stoneskin"/></elseif>
+		</if>
+		<if ad_skill="HealingMagic"><equip set="Healing" /></if>
+		<if ad_skill="EnfeeblingMagic">
+			<equip set="Enfeebling" />
+			<if pet_active="False">
+				<if ad_element="Thunder"><equip main="Thunder Staff" /></if>
+				<elseif ad_element="Fire"><equip main="Fire Staff" /></elseif>
+				<elseif ad_element="Water"><equip main="Water Staff" /></elseif>
+				<elseif ad_element="Ice"><equip main="Ice Staff"/></elseif>
+				<elseif ad_element="Wind"><equip main="Wind Staff"/></elseif>
+				<elseif ad_element="Earth"><equip main="Earth Staff" /></elseif>
+				<elseif ad_element="Light"><equip main="Light Staff" /></elseif>
+				<elseif ad_element="Dark"><equip main="Pluto's Staff" /></elseif>
+			</if>
+		</if>
+		<if ad_skill="DarkMagic"><equip set="Dark" /></if>
+	</midmagic>
+
+	<!-- Weaponskill -->
+	<weaponskill>
+	</weaponskill>
+
+	<petskill>
+		<if ad_type="bloodpactrage|bloodpactward" >
+			<equip set="BP-SMN" />
+		</if>
+	</petskill>	
+</ashitacast>
